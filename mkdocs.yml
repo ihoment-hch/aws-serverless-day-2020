@@ -1,0 +1,62 @@
+site_name: AWS Serverless Day 2020
+site_description: AWS Serverless Day 在线网站
+site_author: AWS
+
+use_directory_urls: false
+
+repo_url: 'https://github.com/linjungz/awsserverlessday'
+
+nav:
+  - 首页: index.md
+  - 介绍: 
+      - 日程: agenda.md
+      - 演讲材料: decks.md
+  - 动手实验: 
+      - '实验环境准备' : setup.md
+      - '场景一：Web应用':
+          - 实验介绍: lab1/index.md
+          - '1. 静态网站托管': lab1/1.静态网站托管.md 
+          - '2. 用户管理': lab1/2.用户管理.md
+          - '3.Serverless后端': lab1/3.Serverless后端.md
+          - '4.RESTful APIs': lab1/4.RESTful_APIs.md
+      - '场景二：数据处理应用': 
+          - 实验介绍: lab2/index.md
+      - '场景三：图片处理工作流':
+          - 实验介绍: lab3/index.md
+  - 学习资源: 
+      - 资源链接: resources.md
+      
+
+
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: indigo
+  font: false
+  features:
+    - tabs
+    - instant
+  custom_dir: overrides
+  favicon: img/favicon.png
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+# Extras
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/linjungz
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/randylinjun
+
+extra_javascript:
+  - javascripts/umeng.js

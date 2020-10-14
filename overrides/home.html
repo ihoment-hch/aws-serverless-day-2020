@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__image">
+          <img src="assets/images/wildrydes-homepage.png" alt="" width=600 draggable="false">
+        </div>
+        <div class="tx-hero__content">
+          <h1>深入了解 AWS Serverless</h1>
+          <p>AWS Serverless Day是一整天以Serverless技术为主题的沉浸式研讨会，通过一个具体可运行的移动出行演示应用，结合多个典型场景展示如何利用AWS Serverless来搭建现代化应用</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | striptags }}" class="md-button md-button--primary">
+            快速上手
+          </a>
+          <a href="{{ config.repo_url }}" title="{{ lang.t('source.link.title') }}" class="md-button">
+            GitHub仓库
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}
+{% endblock %}
