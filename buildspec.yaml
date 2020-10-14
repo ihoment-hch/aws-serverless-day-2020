@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - echo Entered the install phase...
+      - pip install mkdocs-material
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+  build:
+    commands:
+      - echo Entered the build phase...
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+
+artifacts:
+  files:
+    - site/*
